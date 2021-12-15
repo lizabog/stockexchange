@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/site.webmanifest">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+<link rel="stylesheet" href="./style.css">
+    <title>Exchange Search</title>
+  </head>
+
+  <body>
+
+    <ul class="marquee" id="marquee"></ul>
+    <div class="container">
+      <h3>Search Stocks</h3>
+      <div class="row valign-wrapper">
+        <input class="search-bar col s12 " type="search" id="searchInput" />
+      </div>
+
+      <div class="row">
+        <div class="progress col s9 hide" id="loader" >
+          <div class="indeterminate"></div>
+        </div>
+
+        <ul id="listResult"></ul>
+      </div>
+    </div>
+
+    <script src="./marquee.js"></script>
+    <script src="./util.js"></script>
+    <script src="./onSearch.js"></script>
+    <script src="./search.js"></script>
+    <script src="./searchresults.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

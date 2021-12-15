@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <title>Company Profile</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+</head>
+
+<body>
+    <div class="progress col s9" id="loader" >
+          <div class="indeterminate"></div>
+        </div>
+
+    <div class="container" id="container">
+        <h1 class="container" id="compName"></h1>
+        <div class="row section valign-wrapper">
+            <img class="col s3" src="#" alt="company image" id="compImg"/>
+            <p class="container col s5">Stock Price: <span class="" id="price"></span> changes:<span id="percentChange"></span></p>
+        </div>
+        <div class="row">
+            <canvas id="graphArea" class="col s4"></canvas>
+        </div>
+        <div class="row">
+            <p id="description"></p>
+        </div>
+
+    </div>
+    <script src="./util.js"></script>
+    <script src="./comp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

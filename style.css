@@ -1,0 +1,29 @@
+body {
+  overflow: hidden;
+}
+
+li {
+  margin: 4px;
+}
+.marquee {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100vw;
+
+  animation: scroll 20s linear infinite;
+  padding: 3px;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -100vw;
+  }
+}
